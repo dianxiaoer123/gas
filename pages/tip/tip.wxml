@@ -1,0 +1,22 @@
+<view class='bg'>
+   <view class='bgView'>
+      <view class='whiteWord' wx:if="{{isFlag}}">
+         <view> 感谢您对武汉天然气的支持，我们将竭力为您提供更优质的服务。</view>
+         <view class='bordbix'>客服电话： 96511</view>
+      </view>
+
+      <view class='newword' wx:if="{{!isFlag}}">
+         <view class='wxts'>
+            <view class='bordbix'>温馨提示</view>
+         </view>
+         <view class='whiteWord'>如您仍然无法圈存成功请到附近武汉市天然气营业厅或致电96511，咨询工作人员帮您解决。</view>
+      </view>
+
+      <view class='codeBox'>
+         <view>
+            <image src='../../images/code.png' mode='widthFix'></image>
+         </view>
+         <view class='wtiword'>长按二维码关注武汉天然气公众</view>
+      </view>
+   </view>
+</view>

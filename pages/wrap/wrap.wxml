@@ -1,0 +1,192 @@
+<view class='titleBg'>
+   <view class='midView'>
+       <image src='../../images/1a.png' mode='widthFix' wx:if='{{stepIndex == 0}}'></image>
+       <image src='../../images/1b.png' mode='widthFix' wx:if='{{stepIndex == 0?false:true}}'></image>
+      <view class='sjx' wx:if='{{stepIndex == 0}}'></view>
+   </view>
+
+    <view class='midView'>
+       <image src='../../images/2a.png' mode='widthFix' wx:if='{{stepIndex == 1}}'></image>
+       <image src='../../images/2b.png' mode='widthFix' wx:if='{{stepIndex == 1?false:true}}'></image>
+       <view class='sjx' wx:if='{{stepIndex == 1}}'></view>
+   </view>
+
+   <view class='midView'>
+       <image src='../../images/3a.png' mode='widthFix' wx:if='{{stepIndex == 2}}'></image>
+       <image src='../../images/3b.png' mode='widthFix' wx:if='{{stepIndex == 2?false:true}}'></image>
+       <view class='sjx' wx:if='{{stepIndex == 2}}'></view>
+   </view>
+
+   <view class='clear'></view>
+</view>
+
+<view class='partBox'>
+<!-- 插卡 -->
+   <view class='partLi' wx:if='{{stepIndex == 0}}'>
+      <view class='partName'>插卡</view>
+      <view class='partTip'>请将您的蓝牙燃气 IC卡插入气表卡槽中，注意插卡方向。</view>
+      <view class='partColok'></view>
+      <view class='percentPart'>
+         <view class='percentbox'>
+            <view class='insidePer'>
+               <view class='realPer'>
+                  <view class='insi' style='width:{{cardPer}}%'></view>
+               </view>
+               <view class='realCount'>{{cardPer}}%</view>
+               <view class='clear'></view>
+            </view>
+         </view>
+      </view>
+   </view>
+
+<!-- 蓝牙设备连接 -->
+    <view class='partLi' wx:if='{{stepIndex == 1}}'>
+       <view class='partName'>蓝牙设备连接</view>
+       <view class='f2color'>
+          <view class='f2font'>开启蓝牙设备</view>
+          <view class='f2btn {{isOpen?"":"f2btn1"}}' bindtap='isOpen'>
+             <view class='inwhite'></view>
+          </view>
+          <view class='clear'></view>
+       </view>
+
+       <view class='contact'>
+          <view class='insideContact'>
+              <view class='inword'>iphone</view>
+              <view class='tactBox'>
+                 <image src='../../images/ly.png' mode='widthFix'></image>
+                 <view class='line'></view>
+                 <image src='../../images/ly.png' mode='widthFix'></image>
+                 <view class='clear'></view>
+              </view>
+              <view class='inword'>sb00001</view>
+              <view class='clear'></view>
+
+              <view class='sbBox'>设备连接成功</view>
+          </view>
+
+          <view class='partTip'>请按照蓝牙 IC 卡面印刷的NO.编号选取设备</view>
+       </view>
+
+         <view class='f2color'>
+             <view class='f2font'>选取设备</view>
+             <view class='clear'></view>
+         </view>
+         <view class='chooseBlue'>
+            <view class='bluLi'>
+               <view class='bluLeft'>ab00001</view>
+               <view class='blueRigt'>
+                 <image src='../../images/lygray.png' mode='widthFix'></image>
+               </view>
+               <view class='clear'></view>
+            </view>
+
+             <view class='bluLi'>
+               <view class='bluLeft'>ab00001</view>
+               <view class='blueRigt'>
+                 <image src='../../images/lygray.png' mode='widthFix'></image>
+               </view>
+               <view class='clear'></view>
+            </view>
+
+             <view class='bluLi'>
+               <view class='bluLeft'>ab00001</view>
+               <view class='blueRigt'>
+                 <image src='../../images/lygray.png' mode='widthFix'></image>
+               </view>
+               <view class='clear'></view>
+            </view>
+            <view class='clear'></view>
+         </view>
+
+   </view>
+
+   <!-- 圈存 -->
+    <view class='partLi' wx:if='{{stepIndex == 2}}'>
+       <view class='partName'>圈存</view>
+       <view class='f2color'>
+          <view class='f2font'>用户信息</view>
+          <view class='clear'></view>
+       </view>
+
+       <view class='chooseBlue tqList'>
+            <view class='bluLi'>
+               <view class='bluLeft'>用户账号</view>
+               <view class='blueRigt'>
+                 A1202033030
+               </view>
+               <view class='clear'></view>
+            </view>
+
+             <view class='bluLi'>
+               <view class='bluLeft'>用户姓名</view>
+               <view class='blueRigt'>
+                 啦啦啦
+               </view>
+               <view class='clear'></view>
+            </view>
+
+             <view class='bluLi'>
+               <view class='bluLeft'>特圈存量</view>
+               <view class='blueRigt countBlue'>
+                 2000
+               </view>
+               <view class='clear'></view>
+            </view>
+            <view class='clear'></view>
+     </view>
+
+     <view class='btnBox'>
+         <view class='btnstl {{sruindex == 0?"sruLik":""}}' bindtap='sureClick' data-index='0'>确定圈存</view>
+         <view class='btnstl {{sruindex == 1?"sruLik1":""}}' bindtap='sureClick' data-index='1'>取消圈存</view>
+         <view class='clear'></view>
+     </view>
+
+     <view class='newpetcent'>
+        <view class='realCount'>{{qcPer}}%</view>
+          <view class='percentbox'>
+            <view class='insidePer'>
+               <view class='realPer'>
+                  <view class='insi' style='width:{{qcPer}}%'></view>
+               </view>
+               <view class='clear'></view>
+            </view>
+         </view>
+     </view>
+
+
+   </view>
+
+</view>
+
+<view class='lastBtn' wx:if='{{stepIndex == 0?false:true}}'>
+  <image src='../../images/lastbtn.png' mode='widthFix'></image>
+</view>
+
+<view class='tyDialog' wx:if="{{isDialog == 0||isDialog == 1}}">
+    <view class='insideBox'>
+       <view class='leftInside'>
+          <image src='../../images/logo.png' mode='widthFix'></image>
+       </view>
+       <view class='rigtInside' wx:if="{{isDialog == 0}}">
+          <view class='ptcolor'>您已完成气量圈存，请仔细观察表具液晶屏剩余气量显示， <view class='yellowColor'>确认气量上表成功！</view></view>
+
+          <view class='inbtn'>
+            <navigator class='geenStl' url='../tip/tip?isFlag=true'>已上表</navigator>
+            <navigator bindtap='sxClick'>失效</navigator>
+         </view>
+       </view>
+
+         <view class='rigtInside' wx:if="{{isDialog == 1}}">
+          <view class='ptcolor'>请检查您的网络状态 <view class='yellowColor'>是否重新进行圈存！</view></view>
+
+          <view class='inbtn'>
+            <navigator class='geenStl' bindtap='restFunc'>是</navigator>
+            <navigator url='../tip/tip?isFlag=false'>否</navigator>
+         </view>
+       </view>
+       <view class='clear'></view>
+
+  
+    </view>
+</view>

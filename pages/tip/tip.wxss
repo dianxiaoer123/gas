@@ -1,0 +1,47 @@
+.bg{
+  position: relative;
+}
+.bgView{
+  position: absolute;
+   width:500rpx;
+   padding:30rpx 30rpx;
+   background: rgba(45,96,217,0.5);
+   left:50%;
+   top:120rpx;
+   margin-left: -265rpx;
+   border-radius: 5px;
+}
+.whiteWord{
+  font-size: 12px;
+  line-height: 40rpx;
+  color:white;
+  padding:0px 30rpx;
+  margin-top: 20rpx;
+}
+.bordbix{
+  text-align: center;
+  padding:20rpx 0px;
+  margin-top: 30rpx;
+  font-size: 15px;
+  border-top: 1px solid #4D84BD;
+  border-bottom: 1px solid #4D84BD;
+}
+.codeBox{
+  text-align: center;
+}
+.codeBox image{
+  width: 300rpx;
+  margin-top: 50rpx;
+}
+.wtiword{
+  font-size: 14px;
+  color:white;
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.wxts{
+  width: 200rpx;
+  margin:0px auto;
+  color: white;
+}

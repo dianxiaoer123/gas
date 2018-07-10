@@ -1,0 +1,10 @@
+<swiper indicator-dots="{{indicatorDots}}" indicator-color='rgba(34,130,239,0.5)' indicator-active-color='rgba(34,130,239,0.9)'>
+   <swiper-item>
+      <image src="../../images/tt.jpg"/>
+    </swiper-item>
+       <swiper-item>
+      <image src="../../images/tt.jpg"/>
+    </swiper-item>
+</swiper>
+
+<view class='btnView'><navigator url='/pages/wrap/wrap'>跳过</navigator></view>

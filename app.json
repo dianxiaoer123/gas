@@ -1,0 +1,15 @@
+{
+  "pages": [
+  
+    "pages/wrap/wrap",
+    "pages/tip/tip",
+    "pages/index/index"
+   
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "天然气小程序",
+    "navigationBarTextStyle": "black"
+  }
+}
